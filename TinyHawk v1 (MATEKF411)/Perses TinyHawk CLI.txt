@@ -113,6 +113,7 @@ set vcd_video_system = NTSC
 # profile
 profile 0
 
+set dterm_notch_cutoff = 0
 
 # profile
 profile 1
@@ -128,6 +129,14 @@ profile 0
 # rateprofile
 rateprofile 0
 
+set roll_rc_rate = 121
+set pitch_rc_rate = 121
+set roll_expo = 25
+set pitch_expo = 25
+set yaw_expo = 30
+set roll_srate = 75
+set pitch_srate = 75
+set yaw_srate = 80
 
 # rateprofile
 rateprofile 1
@@ -154,4 +163,3 @@ rateprofile 0
 
 # save configuration
 save
-# 
