@@ -1,6 +1,4 @@
-# 
-
-# diff all
+diff all
 
 # version
 # Betaflight / MATEKF411 (MK41) 3.5.1 Sep  8 2018 / 05:32:10 (d9fb5ca13) MSP API: 1.40
@@ -28,7 +26,6 @@ name TinyHawk 2
 # feature
 feature -SOFTSERIAL
 feature -TELEMETRY
-feature AIRMODE
 
 # beeper
 beeper -ON_USB
@@ -73,61 +70,49 @@ set min_check = 1090
 set max_check = 2000
 set rssi_channel = 9
 set fpv_mix_degrees = 25
-set dshot_idle_value = 600
+set dshot_idle_value = 750
 set motor_pwm_protocol = DSHOT600
 set bat_capacity = 450
 set vbat_max_cell_voltage = 45
 set vbat_min_cell_voltage = 32
 set vbat_warning_cell_voltage = 33
+set ibata_offset = -13000
 set crashflip_motor_percent = 70
 set small_angle = 180
 set pid_process_denom = 1
+set osd_warn_batt_not_full = OFF
 set osd_warn_core_temp = OFF
-set osd_vbat_pos = 2421
-set osd_rssi_pos = 2372
-set osd_tim_2_pos = 2389
-set osd_vtx_channel_pos = 2403
-set osd_craft_name_pos = 2442
-set osd_warnings_pos = 329
+set osd_vbat_pos = 2337
+set osd_rssi_pos = 388
+set osd_tim_2_pos = 2436
+set osd_g_force_pos = 2346
+set osd_throttle_pos = 2241
+set osd_vtx_channel_pos = 2452
+set osd_crosshairs_pos = 2253
+set osd_ah_sbar_pos = 2254
+set osd_ah_pos = 2126
+set osd_current_pos = 2369
+set osd_craft_name_pos = 2090
+set osd_home_dir_pos = 2158
+set osd_compass_bar_pos = 2122
+set osd_power_pos = 2401
+set osd_warnings_pos = 2409
+set osd_nheading_pos = 2153
+set osd_nvario_pos = 2351
+set osd_esc_rpm_pos = 2081
 set osd_stat_max_spd = OFF
+set osd_stat_battery = ON
 set osd_stat_max_curr = OFF
 set osd_stat_used_mah = OFF
 set osd_stat_bbox = OFF
 set osd_stat_bb_no = OFF
-set vtx_band = 5
-set vtx_channel = 4
-set vtx_freq = 5769
+set vtx_band = 1
+set vtx_freq = 5865
 set vcd_video_system = NTSC
 
 # profile
 profile 0
 
-set dterm_lowpass_hz = 80
-set dterm_lowpass2_hz = 170
-set dterm_notch_cutoff = 0
-set feedforward_transition = 25
-set iterm_rotation = OFF
-set iterm_relax = RPY
-set yaw_lowpass_hz = 100
-set throttle_boost = 4
-set acro_trainer_gain = 25
-set p_pitch = 100
-set i_pitch = 120
-set d_pitch = 90
-set f_pitch = 90
-set p_roll = 100
-set i_roll = 120
-set d_roll = 90
-set f_roll = 90
-set p_yaw = 90
-set i_yaw = 90
-set d_yaw = 40
-set f_yaw = 80
-set p_level = 25
-set i_level = 25
-set level_limit = 25
-set horizon_tilt_effect = 25
-set abs_control_gain = 5
 
 # profile
 profile 1
@@ -143,40 +128,14 @@ profile 0
 # rateprofile
 rateprofile 0
 
-set thr_expo = 50
-set roll_rc_rate = 121
-set pitch_rc_rate = 121
-set roll_expo = 30
-set pitch_expo = 30
-set yaw_expo = 25
-set roll_srate = 75
-set pitch_srate = 75
-set yaw_srate = 80
 
 # rateprofile
 rateprofile 1
 
-set thr_expo = 55
-set roll_expo = 70
-set pitch_expo = 70
-set yaw_expo = 40
-set roll_srate = 75
-set pitch_srate = 75
-set yaw_srate = 50
 
 # rateprofile
 rateprofile 2
 
-set thr_expo = 50
-set roll_rc_rate = 80
-set pitch_rc_rate = 80
-set yaw_rc_rate = 80
-set roll_expo = 60
-set pitch_expo = 60
-set yaw_expo = 20
-set roll_srate = 60
-set pitch_srate = 60
-set yaw_srate = 60
 
 # rateprofile
 rateprofile 3

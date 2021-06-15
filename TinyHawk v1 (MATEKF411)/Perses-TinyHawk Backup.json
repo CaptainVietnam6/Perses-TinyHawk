@@ -1,5 +1,5 @@
 {
-	"generatedBy": "10.7.0",
+	"generatedBy": "10.4.0",
 	"apiVersion": "1.40.0",
 	"profiles": [
 		{
@@ -8,23 +8,23 @@
 			},
 			"PIDs": [
 				[
-					100,
-					120,
-					90
+					46,
+					45,
+					25
 				],
 				[
-					100,
-					120,
-					90
+					50,
+					50,
+					27
 				],
 				[
-					90,
-					90,
-					40
+					65,
+					45,
+					0
 				],
 				[
-					25,
-					25,
+					50,
+					50,
 					75
 				],
 				[
@@ -39,23 +39,18 @@
 				[]
 			],
 			"RC": {
-				"RC_RATE": 1.21,
-				"RC_EXPO": 0.3,
+				"RC_RATE": 1,
+				"RC_EXPO": 0,
 				"roll_pitch_rate": 0,
-				"roll_rate": 0.75,
-				"pitch_rate": 0.75,
-				"yaw_rate": 0.8,
+				"roll_rate": 0.7,
+				"pitch_rate": 0.7,
+				"yaw_rate": 0.7,
 				"dynamic_THR_PID": 0.1,
 				"throttle_MID": 0.5,
-				"throttle_EXPO": 0.5,
+				"throttle_EXPO": 0,
 				"dynamic_THR_breakpoint": 1650,
-				"RC_YAW_EXPO": 0.25,
-				"rcYawRate": 1,
-				"rcPitchRate": 1.21,
-				"RC_PITCH_EXPO": 0.3,
-				"roll_rate_limit": 1998,
-				"pitch_rate_limit": 1998,
-				"yaw_rate_limit": 1998
+				"RC_YAW_EXPO": 0,
+				"rcYawRate": 1
 			},
 			"AccTrim": [
 				0,
@@ -486,23 +481,18 @@
 				[]
 			],
 			"RC": {
-				"RC_RATE": 1.21,
-				"RC_EXPO": 0.3,
+				"RC_RATE": 1,
+				"RC_EXPO": 0,
 				"roll_pitch_rate": 0,
-				"roll_rate": 0.75,
-				"pitch_rate": 0.75,
-				"yaw_rate": 0.8,
+				"roll_rate": 0.7,
+				"pitch_rate": 0.7,
+				"yaw_rate": 0.7,
 				"dynamic_THR_PID": 0.1,
 				"throttle_MID": 0.5,
-				"throttle_EXPO": 0.5,
+				"throttle_EXPO": 0,
 				"dynamic_THR_breakpoint": 1650,
-				"RC_YAW_EXPO": 0.25,
-				"rcYawRate": 1,
-				"rcPitchRate": 1.21,
-				"RC_PITCH_EXPO": 0.3,
-				"roll_rate_limit": 1998,
-				"pitch_rate_limit": 1998,
-				"yaw_rate_limit": 1998
+				"RC_YAW_EXPO": 0,
+				"rcYawRate": 1
 			},
 			"AccTrim": [
 				0,
@@ -933,23 +923,18 @@
 				[]
 			],
 			"RC": {
-				"RC_RATE": 1.21,
-				"RC_EXPO": 0.3,
+				"RC_RATE": 1,
+				"RC_EXPO": 0,
 				"roll_pitch_rate": 0,
-				"roll_rate": 0.75,
-				"pitch_rate": 0.75,
-				"yaw_rate": 0.8,
+				"roll_rate": 0.7,
+				"pitch_rate": 0.7,
+				"yaw_rate": 0.7,
 				"dynamic_THR_PID": 0.1,
 				"throttle_MID": 0.5,
-				"throttle_EXPO": 0.5,
+				"throttle_EXPO": 0,
 				"dynamic_THR_breakpoint": 1650,
-				"RC_YAW_EXPO": 0.25,
-				"rcYawRate": 1,
-				"rcPitchRate": 1.21,
-				"RC_PITCH_EXPO": 0.3,
-				"roll_rate_limit": 1998,
-				"pitch_rate_limit": 1998,
-				"yaw_rate_limit": 1998
+				"RC_YAW_EXPO": 0,
+				"rcYawRate": 1
 			},
 			"AccTrim": [
 				0,
@@ -1802,7 +1787,6 @@
 		"yaw": 0
 	},
 	"CRAFT_NAME": "TinyHawk 2",
-	"DISPLAY_NAME": "JOE PILOT",
 	"MIXER_CONFIG": {
 		"mixer": 3,
 		"reverseMotorDir": 0
@@ -1818,16 +1802,8 @@
 		"use_unsyncedPwm": 0,
 		"fast_pwm_protocol": 7,
 		"motor_pwm_rate": 480,
-		"digitalIdlePercent": 6,
-		"gyroUse32kHz": 0,
-		"motorPwmInversion": 0,
-		"gyroHighFsr": 0,
-		"gyroMovementCalibThreshold": 0,
-		"gyroCalibDuration": 0,
-		"gyroOffsetYaw": 0,
-		"gyroCheckOverflow": 0,
-		"debugMode": 0,
-		"debugModeCount": 0
+		"digitalIdlePercent": 7.5,
+		"gyroUse32kHz": 0
 	},
 	"LED_MODE_COLORS": [
 		{
@@ -2087,11 +2063,7 @@
 	"SENSOR_ALIGNMENT": {
 		"align_gyro": 0,
 		"align_acc": 0,
-		"align_mag": 0,
-		"gyro_detection_flags": 0,
-		"gyro_to_use": 0,
-		"gyro_1_align": 0,
-		"gyro_2_align": 0
+		"align_mag": 0
 	},
 	"RX_CONFIG": {
 		"serialrx_provider": 2,
@@ -2113,9 +2085,7 @@
 		"rcSmoothingInputCutoff": 0,
 		"rcSmoothingDerivativeCutoff": 0,
 		"rcSmoothingInputType": 1,
-		"rcSmoothingDerivativeType": 2,
-		"rcSmoothingAutoSmoothness": 0,
-		"usbCdcHidType": 0
+		"rcSmoothingDerivativeType": 2
 	},
 	"FAILSAFE_CONFIG": {
 		"failsafe_delay": 4,
@@ -2224,14 +2194,13 @@
 				},
 				{
 					"bit": 4,
-					"group": "escMotorStop",
+					"group": "esc",
 					"name": "MOTOR_STOP"
 				},
 				{
 					"bit": 5,
 					"group": "other",
-					"name": "SERVO_TILT",
-					"haveTip": true
+					"name": "SERVO_TILT"
 				},
 				{
 					"bit": 6,
@@ -2317,15 +2286,13 @@
 				},
 				{
 					"bit": 27,
-					"group": "escSensor",
+					"group": "other",
 					"name": "ESC_SENSOR"
 				},
 				{
 					"bit": 28,
-					"group": "antiGravity",
-					"name": "ANTI_GRAVITY",
-					"haveTip": true,
-					"hideName": true
+					"group": "other",
+					"name": "ANTI_GRAVITY"
 				},
 				{
 					"bit": 29,
@@ -2333,26 +2300,23 @@
 					"name": "DYNAMIC_FILTER"
 				}
 			],
-			"_featureMask": 809762824,
+			"_featureMask": 805568520,
 			"_analyticsChanges": {}
 		}
 	},
 	"MOTOR_CONFIG": {
 		"minthrottle": 1070,
 		"maxthrottle": 2000,
-		"mincommand": 1000,
-		"motor_count": 0,
-		"motor_poles": 0,
-		"use_dshot_telemetry": false,
-		"use_esc_sensor": false
+		"mincommand": 1000
 	},
 	"GPS_CONFIG": {
 		"provider": 0,
 		"ublox_sbas": 0,
 		"auto_config": 1,
-		"auto_baud": 0,
-		"home_point_once": 0,
-		"ublox_use_galileo": 0
+		"auto_baud": 0
+	},
+	"COMPASS_CONFIG": {
+		"mag_declination": 0
 	},
 	"BEEPER_CONFIG": {
 		"beepers": {
@@ -2465,11 +2429,6 @@
 				{
 					"bit": 21,
 					"name": "CAM_CONNECTION_CLOSE",
-					"visible": true
-				},
-				{
-					"bit": 22,
-					"name": "RC_SMOOTHING_INIT_FAIL",
 					"visible": true
 				}
 			],
